@@ -274,6 +274,27 @@ img {
 
 /*========== SOCIAL ==========*/
 
+.social__container {
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.social__link:hover {
+  color: var(--title-color);
+}
+
+.social__icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
 /*========== PROFILE ==========*/
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
