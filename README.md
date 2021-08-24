@@ -1,7 +1,5 @@
 # Responsive Resume Cv Smith
 
-![logo256](https://user-images.githubusercontent.com/49658988/127763995-117739a8-66a5-4149-9651-4530a12c3fe9.png)
-
 ---
 
 ## Demo
