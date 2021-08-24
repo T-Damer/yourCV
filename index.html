@@ -13,6 +13,34 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
 
+    <!--========== FAVICONS ==========-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="assets/favicons/site.webmanifest"
+    />
+    <meta
+      name="msapplication-TileColor"
+      content="#da532c"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -85,9 +113,47 @@
         <div class="resume__left">
           <!--========== HOME ==========-->
           <section class="home" id="home">
-            <!-- Theme change button -->
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img
+                  src="assets/img/perfil.png"
+                  alt="logo"
+                  class="home__img"
+                />
 
-            <!-- Button to generate and download the pdf. Available for desktop. -->
+                <h1 class="home__title">
+                  DANIIL <b>PANKOV</b>
+                </h1>
+                <h3 class="home__profession">
+                  Web developer
+                </h3>
+
+                <div>
+                  <a
+                    download=""
+                    href="assets/pdf/ResumeCv.pdf"
+                    class="home__button-mobil"
+                    >Download</a
+                  >
+                </div>
+              </div>
+              <!-- Theme change button -->
+
+              <div class="home__address bd-grid">
+                <span class="home__information"
+                  ><i class="bx bx-envelope home__icon"></i
+                  >dpancov64@gmail.com</span
+                >
+                <span class="home__information"
+                  ><i class="bx bxs-map-alt home__icon"></i
+                  >Russia, Voronezh, Boulvar-Pobedy</span
+                >
+                <span class="home__information"
+                  ><i class="bx bx-phone home__icon"></i
+                  >+7-980-541-39-90</span
+                >
+              </div>
+            </div>
           </section>
 
           <!--========== SOCIAL ==========-->
@@ -144,7 +210,6 @@
 
     <!--========== HTML2PDF ==========-->
     <script src="assets/js/html2pdf.bundle.min.js"></script>
-
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
   </body>
