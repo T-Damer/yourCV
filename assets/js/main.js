@@ -1,3 +1,5 @@
+const html2pdfBundleMin = require('./html2pdf.bundle.min')
+
 /*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
@@ -120,19 +122,34 @@ themeButton.addEventListener('click', () => {
 
 /*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/
 
+function scaleCV() {
+  document.body.classList.add('scale-cv')
+}
+
 /*==================== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ====================*/
 
+function removeScale() {
+  document.body.classList.remove('scale-cv')
+}
+
 /*==================== GENERATE PDF ====================*/
-// PDF generated area
+let areaCV = document.getElementById('area-cv')
 
-// Html2pdf options
+let resumeButton = document.getElementsById('resume-button')
 
-// Function to call areaCv and Html2Pdf options
+const pdfOptions = {
+  margin: 0,
+  filename: 'DaniilPankovCV.pdf',
+  image: { type: 'png', quality: 1 },
+  html2canvas: { scale: 4 },
+  jsPDF: { format: 'a4', orientation: 'portrait' },
+}
 
-// When the button is clicked, it executes the three functions
-
-// 1. The class .scale-cv is added to the body, where it reduces the size of the elements
-
-// 2. The PDF is generated
-
-// 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
+function generateResume() {
+  html2pdf(areaCV, pdfOptions)
+}
+resumeButton.addEventListener('click', () => {
+  scaleCV()
+  generateResume()
+  setTimeout(removeScale, 5000)
+})
