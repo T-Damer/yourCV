@@ -1,4 +1,4 @@
-# Responsive Resume Cv Smith
+# Responsive Resume
 
 ---
 
