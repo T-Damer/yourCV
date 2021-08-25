@@ -456,5 +456,69 @@ img {
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
+@media screen and (max-width: 320px) {
+  .nav__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.5rem;
+  }
+}
 
 /* Classes modified for large screen size */
+@media screen and (min-width: 968px) {
+  body {
+    margin: 3rem 0;
+  }
+
+  .bd-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .l-header,
+  .scrolltop {
+    display: none;
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+
+  .resume__right,
+  .resume__left {
+    padding: 0 1.5rem;
+  }
+
+  .section-title,
+  .profile__description {
+    text-align: initial;
+  }
+
+  .home__container {
+    gap: 1.5rem;
+  }
+
+  .home__button-mobil {
+    display: none;
+  }
+
+  .references__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .languages__content {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3.5rem;
+  }
+
+  .interests__container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3.5rem;
+  }
+}
