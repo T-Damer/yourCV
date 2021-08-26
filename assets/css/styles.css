@@ -185,7 +185,7 @@ body.scale-cv {
 .scale-cv .experience__line {
   width: 1px;
   height: 110%;
-  transform: translateX(5px, 0);
+  transform: translate(5px, 0);
 }
 
 .scale-cv .education__data,
@@ -258,7 +258,7 @@ img {
 
 /*========== LAYOUT ==========*/
 .bd-container {
-  max-width: 968px;
+  justify-content: center;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);

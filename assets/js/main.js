@@ -133,7 +133,7 @@ function removeScale() {
 /*==================== GENERATE PDF ====================*/
 let areaCV = document.getElementById('area-cv')
 
-let resumeButton = document.getElementsById('resume-button')
+let resumeButton = document.getElementById('resume-button')
 
 const pdfOptions = {
   margin: 0,
