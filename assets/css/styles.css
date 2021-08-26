@@ -258,9 +258,9 @@ img {
 
 /*========== LAYOUT ==========*/
 .bd-container {
-  width: calc(100% - 5rem);
-  margin-left: 5rem;
-  padding-right: 5rem;
+  width: calc(100% - 3rem);
+  margin-left: 3rem;
+  padding-right: 3rem;
 }
 
 .bd-grid {
@@ -610,6 +610,12 @@ img {
 @media screen and (min-width: 968px) {
   body {
     margin: 3rem 0;
+  }
+
+  .bd-container {
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+    padding-right: 5rem;
   }
 
   .bd-content {
