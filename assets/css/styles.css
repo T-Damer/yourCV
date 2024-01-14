@@ -123,7 +123,7 @@ body.scale-cv {
 }
 
 .scale-cv .bd-container {
-  max-width: 595px;
+  max-width: 695px;
 }
 
 .scale-cv .section {
@@ -228,6 +228,10 @@ h3 {
 a {
   text-decoration: none;
   color: var(--text-color);
+}
+.inline-link {
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 ul {
